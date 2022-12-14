@@ -12,6 +12,10 @@
         </xsl:if>
         class <xsl:value-of select="Name"/>
         {
+                public <xsl:value-of select="Name"/>()
+                {
+                    
+                }
             <xsl:for-each select="Fields/Field">
                 <xsl:variable name="normalizeFieldDesc" select="normalize-space(Desc)" />
                 <xsl:if test="$normalizeFieldDesc != '' and $normalizeFieldDesc != ' '">
