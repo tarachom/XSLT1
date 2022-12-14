@@ -20,7 +20,6 @@
                 <xsl:call-template name="FieldType" />
                 <xsl:text> </xsl:text>
                 <xsl:value-of select="Name"/> { get; set; } = <xsl:call-template name="DefaultFieldValue" />;
-
             </xsl:for-each>
         }
         

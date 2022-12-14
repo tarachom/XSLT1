@@ -11,40 +11,48 @@
           <NameInTable>col_b1</NameInTable>
           <Type>string</Type>
           <Desc>Назва</Desc>
-          <IsPresentation>1</IsPresentation>
-          <IsIndex>0</IsIndex>
         </Field>
         <Field>
           <Name>Код</Name>
           <NameInTable>col_b2</NameInTable>
           <Type>string</Type>
           <Desc>Код номенклатури</Desc>
-          <IsPresentation>0</IsPresentation>
-          <IsIndex>0</IsIndex>
         </Field>
         <Field>
           <Name>НазваПовна</Name>
           <NameInTable>col_b4</NameInTable>
           <Type>string</Type>
           <Desc>Назва номенклатури</Desc>
-          <IsPresentation>0</IsPresentation>
-          <IsIndex>0</IsIndex>
         </Field>
         <Field>
           <Name>Опис</Name>
           <NameInTable>col_a1</NameInTable>
           <Type>string</Type>
           <Desc>Повний опис</Desc>
-          <IsPresentation>0</IsPresentation>
-          <IsIndex>0</IsIndex>
         </Field>
         <Field>
           <Name>Артикул</Name>
           <NameInTable>col_b3</NameInTable>
           <Type>string</Type>
           <Desc>Артикул для товарів</Desc>
-          <IsPresentation>0</IsPresentation>
-          <IsIndex>0</IsIndex>
+        </Field>
+        <Field>
+          <Name>ДатаСтворення</Name>
+          <NameInTable>col_b4</NameInTable>
+          <Type>datetime</Type>
+          <Desc>Дата створення</Desc>
+        </Field>
+        <Field>
+          <Name>Залишок</Name>
+          <NameInTable>col_b5</NameInTable>
+          <Type>numeric</Type>
+          <Desc>Залишок</Desc>
+        </Field>
+        <Field>
+          <Name>Доступний</Name>
+          <NameInTable>col_b6</NameInTable>
+          <Type>boolean</Type>
+          <Desc>Доступний</Desc>
         </Field>
       </Fields>
     </Directory>
