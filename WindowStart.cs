@@ -46,7 +46,7 @@ namespace XSLTTest
 
             hPaned.Pack1(hboxXML, false, true);
 
-            HPaned hPaned2 = new HPaned() { Orientation = Orientation.Vertical, Position = 400 };
+            HPaned hPaned2 = new HPaned() { Orientation = Orientation.Vertical, Position = 300 };
             hPaned.Pack2(hPaned2, false, true);
 
             //XSLT
@@ -87,7 +87,6 @@ namespace XSLTTest
 
             textXML.Buffer.Text = File.ReadAllText(pathToXML);
             textXSLT.Buffer.Text = File.ReadAllText(pathToXSLT);
-            textTxt.Buffer.Text = "text";
 
             XslCompiledTransform transform = new XslCompiledTransform();
             transform.Load(pathToXSLT);

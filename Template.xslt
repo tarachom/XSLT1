@@ -6,19 +6,24 @@
 
     <xsl:for-each select="Configuration/Directories/Directory">
 
-    class <xsl:value-of select="Name"/>
-    {
-        <xsl:for-each select="Fields/Field">
-            <xsl:variable name="normalizeDesc" select="normalize-space(Desc)" />
-            <xsl:if test="$normalizeDesc != '' and $normalizeDesc != ' '">
-            /* <xsl:value-of select="$normalizeDesc"/> */
-            </xsl:if>
-            <xsl:call-template name="FieldType" />
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="Name"/> { get; set; } = <xsl:call-template name="DefaultFieldValue" />;
+        <xsl:variable name="normalizeClassDesc" select="normalize-space(Desc)" />
+        <xsl:if test="$normalizeClassDesc != '' and $normalizeClassDesc != ' '">
+        // <xsl:value-of select="$normalizeClassDesc"/>
+        </xsl:if>
+        class <xsl:value-of select="Name"/>
+        {
+            <xsl:for-each select="Fields/Field">
+                <xsl:variable name="normalizeFieldDesc" select="normalize-space(Desc)" />
+                <xsl:if test="$normalizeFieldDesc != '' and $normalizeFieldDesc != ' '">
+                /* <xsl:value-of select="$normalizeFieldDesc"/> */
+                </xsl:if>
+                <xsl:call-template name="FieldType" />
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="Name"/> { get; set; } = <xsl:call-template name="DefaultFieldValue" />;
 
-        </xsl:for-each>
-    } 
+            </xsl:for-each>
+        }
+        
     </xsl:for-each>
 
   </xsl:template>
