@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Directories>
+    <Directory>
+      <Name>Номенклатура</Name>
+      <Table>tab_a03</Table>
+      <Desc>Товари та послуги</Desc>
+      <Fields>
+        <Field>
+          <Name>Назва</Name>
+          <NameInTable>col_b1</NameInTable>
+          <Type>string</Type>
+          <Desc>Назва</Desc>
+          <IsPresentation>1</IsPresentation>
+          <IsIndex>0</IsIndex>
+        </Field>
+        <Field>
+          <Name>Код</Name>
+          <NameInTable>col_b2</NameInTable>
+          <Type>string</Type>
+          <Desc>Код номенклатури</Desc>
+          <IsPresentation>0</IsPresentation>
+          <IsIndex>0</IsIndex>
+        </Field>
+        <Field>
+          <Name>НазваПовна</Name>
+          <NameInTable>col_b4</NameInTable>
+          <Type>string</Type>
+          <Desc>Назва номенклатури</Desc>
+          <IsPresentation>0</IsPresentation>
+          <IsIndex>0</IsIndex>
+        </Field>
+        <Field>
+          <Name>Опис</Name>
+          <NameInTable>col_a1</NameInTable>
+          <Type>string</Type>
+          <Desc>Повний опис</Desc>
+          <IsPresentation>0</IsPresentation>
+          <IsIndex>0</IsIndex>
+        </Field>
+        <Field>
+          <Name>Артикул</Name>
+          <NameInTable>col_b3</NameInTable>
+          <Type>string</Type>
+          <Desc>Артикул для товарів</Desc>
+          <IsPresentation>0</IsPresentation>
+          <IsIndex>0</IsIndex>
+        </Field>
+      </Fields>
+    </Directory>
+  </Directories>
+</Configuration>
